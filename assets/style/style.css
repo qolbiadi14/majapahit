@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding-inline-start: 0px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #0f0f0f;
+  background-color: #e6e6e6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#navbar-logo {
+  width: 60px;
+}
+
+.navbar-scrolled {
+  background-color: #0f0f0f;
+}
+
+.jumbotron {
+  top: 0;
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../image/gambar-jumbotron.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #e6e6e6;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+.jumbotron p {
+  font-size: 18px;
+  color: #e6e6e6;
+  max-width: 600px;
+}
+
+main {
+  padding: 20px;
+  background-color: #0f0f0f;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+aside {
+  flex: 1;
+}
+
+h2 {
+  background: linear-gradient(180deg, #532e1c 0%, #c5a880 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  background: linear-gradient(180deg, #532e1c 0%, #c5a880 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #e6e6e6;
+}
+
+#struktur li {
+  color: #e6e6e6;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #0f0f0f;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+figure img {
+  width: 50px;
+}
+
+figcaption {
+  color: #e6e6e6;
+}
+
+.part header {
+  text-align: center;
+}
+
+.section-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile figure {
+  display: inline-block;
+  width: 30%;
+  min-height: 100px;
+  margin-right: 10px;
+}
+
+.profile figure img {
+  width: 100%;
+}
+
+.side-td {
+  font-weight: bold;
+  padding-right: 10px;
+  color: #e6e6e6;
+}
+
+.right-td {
+  color: #e6e6e6;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
